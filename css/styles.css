@@ -1,0 +1,185 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**/
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif; }
+
+h1 {
+  font-size: 24px;
+  font-weight: 600; }
+
+.container {
+  display: flex; }
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100vh;
+  width: 50%; }
+
+.left .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e78004fa;
+  color: #fff;
+  min-height: 64px;
+  padding: 8px 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 8px;
+  cursor: default; }
+
+.left .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 16px;
+  position: relative;
+  background-image: url("../assets/wallpaper4.webp");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.left .content .card .background {
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  background: #e9debdba;
+  position: relative; }
+
+.left .card p {
+  padding: 32px 16px;
+  text-align: center;
+  cursor: default;
+  border-radius: 6px;
+  background: radial-gradient(#fae49d, #FFEFCA);
+  line-height: 24px;
+  font-size: 16px;
+  font-style: italic; }
+
+.left .reload {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  cursor: pointer; }
+
+.left .img-bottom {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: 0; }
+
+.right {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100vh; }
+
+.right .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background: #950092;
+  color: #fff;
+  min-height: 64px;
+  padding: 8px 16px;
+  width: -webkit-fill-available;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 8px;
+  cursor: default; }
+
+.right .content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  position: relative;
+  padding: 96px 16px 16px 16px;
+  background-image: url("../assets/wallpaper7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.right .content > .card {
+  text-align: center;
+  text-shadow: #000 1px 0 1px;
+  background: #ebe0eda1;
+  padding: 16px 24px;
+  border-radius: 4px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; }
+
+.right .content .card p {
+  font-size: 16px;
+  line-height: 24px;
+  cursor: default; }
+
+.right::-webkit-scrollbar {
+  width: 8px;
+  background: #7a5877;
+  border-radius: 16px; }
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow: auto; }
+
+  .container {
+    display: flex;
+    flex-direction: column; }
+
+  .left,
+  .right {
+    width: 100%;
+    overflow: auto; }
+
+  .right .header {
+    position: relative; }
+
+  .right .content {
+    padding: 16px; } }
+
+/*# sourceMappingURL=styles.css.map */
